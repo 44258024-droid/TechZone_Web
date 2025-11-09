@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="TechZone - Innovación y tecnología a tu alcance.">
+  <title>TechZone | Innovación Tecnológica</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+  <header class="site-header">
+    <h1>TechZone</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+    
+  <main>
+    <section id="inicio" class="hero">
+      <figure>
+        <picture>
+          <source media="(min-width:800px)" srcset="img/hero-large.jpg">
+          <source media="(min-width:480px)" srcset="img/hero-medium.jpg">
+          <img src="img/hero-small.jpg" alt="TechZone - Tecnología">
+        </picture>
+        <figcaption>TechZone — Soluciones tecnológicas modernas.</figcaption>
+      </figure>
+      <div class="intro">
+        <h2>Bienvenido a TechZone</h2>
+        <p>En <strong>TechZone</strong> nos apasiona la innovación. Ofrecemos soluciones tecnológicas, productos y servicios para empresas y usuarios.</p>
+      </div>
+    </section>
+
+    <section class="mapa-interactivo">
+  <h3>Mapa interactivo (image map)</h3>
+  <p>Haz clic en las zonas del teléfono para ver el producto relacionado.</p>
+
+  <img src="img/phone-map.jpg" usemap="#phoneareas" alt="Mapa interactivo de smartphone">
+  <map name="phoneareas" id="phoneareas">
+    <!-- Zona 1: Smartphone -->
+    <area shape="rect" coords="20,20,180,120" href="productos.html#smartphone" alt="Smartphone TechZone Ultra" title="Ver Smartphone">
+
+    <!-- Zona 2: Laptop -->
+    <area shape="circle" coords="300,80,50" href="productos.html#laptop" alt="Laptop TechZone Pro X" title="Ver Laptop">
+
+    <!-- Zona 3: Auriculares -->
+    <area shape="rect" coords="20,140,180,220" href="productos.html#auriculares" alt="Auriculares TechZone Sound" title="Ver Auriculares">
+  </map>
+</section>
+
+
+    <section class="svg-demo">
+      <h3>SVG de marca</h3>
+      <object type="image/svg+xml" data="img/techzone-logo.svg" class="svg-object">Tu navegador no soporta SVG.</object>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TechZone. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

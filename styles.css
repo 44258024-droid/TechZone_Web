@@ -1,0 +1,51 @@
+
+:root{
+  --primario:#0b6efd;
+  --fondo:#f7f9fc;
+  --texto:#162029;
+  --accent:#ffb703;
+  --radius:10px;
+}
+*{box-sizing:border-box}
+body{font-family: Arial, Helvetica, sans-serif;margin:0;color:var(--texto);background:var(--fondo);line-height:1.5}
+.site-header{background:linear-gradient(90deg,var(--primario),#084298);color:white;padding:18px 20px;display:flex;align-items:center;justify-content:space-between}
+.site-header h1{margin:0;font-size:1.3rem}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:12px}
+nav a{color:rgba(255,255,255,0.95);text-decoration:none;padding:8px 10px;border-radius:6px;transition:background .25s, transform .15s}
+nav a:hover{background:rgba(255,255,255,0.08); transform:translateY(-2px)}
+nav a.active{background:rgba(0,0,0,0.12)}
+.hero{display:flex;gap:20px;padding:28px;align-items:center;flex-wrap:wrap}
+.hero figure{flex:1;max-width:520px;margin:0}
+.hero img{width:100%;border-radius:12px;display:block;filter:contrast(1.02) saturate(1.05);transition:transform .4s, filter .4s}
+.hero img:hover{transform:scale(1.02);filter:brightness(0.98)}
+.intro{flex:1;min-width:260px}
+.mapa-interactivo{padding:20px}
+.svg-demo{padding:20px}
+.svg-object{width:220px;height:120px;display:block}
+.productos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;padding:20px;list-style:none}
+.productos-grid li{background:white;padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,0.06);transition:transform .25s, box-shadow .25s}
+.productos-grid li:hover{transform:translateY(-6px);box-shadow:0 12px 24px rgba(16,24,40,0.12)}
+.productos-grid img{width:100%;border-radius:8px;display:block}
+.tabla-productos{width:100%;border-collapse:collapse;margin:12px 0;background:white;border-radius:8px;overflow:hidden}
+.tabla-productos th, .tabla-productos td{padding:10px;text-align:left}
+.tabla-productos thead th{background:linear-gradient(90deg,var(--primario),#084298);color:white}
+.tabla-productos tbody tr:nth-child(even){background:#fbfdff}
+.contact-form{max-width:560px;background:white;padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+.contact-form label{display:block;margin:8px 0 4px;font-weight:600}
+.contact-form input, .contact-form textarea{width:100%;padding:10px;border-radius:6px;border:1px solid #dfe7ef}
+.contact-form button{margin-top:12px;padding:10px 14px;border-radius:8px;border:0;background:var(--primario);color:white;font-weight:700;cursor:pointer;transition:transform .12s}
+.contact-form button:hover{transform:translateY(-3px)}
+@media(max-width:720px){.hero{flex-direction:column}}
+@keyframes float {0%{transform:translateY(0)}50%{transform:translateY(-8px)}100%{transform:translateY(0)}}
+.productos-grid li figure{animation:float 6s ease-in-out infinite}
+
+.mapa-interactivo img {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px; 
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.1);
+}
+

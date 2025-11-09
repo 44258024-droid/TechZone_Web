@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="TechZone - Contacto.">
+  <title>TechZone - Contacto</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+  <header class="site-header">
+    <h1>TechZone</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <p>¿Tienes alguna consulta? Escríbenos a <a href="mailto:info@techzone.com">info@techzone.com</a> o completa el formulario.</p>
+
+      <form class="contact-form" action="#" method="post" novalidate>
+        <label for="nombre">Nombre completo</label>
+        <input id="nombre" name="nombre" type="text" required>
+
+        <label for="email">Correo electrónico</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="asunto">Asunto</label>
+        <input id="asunto" name="asunto" type="text">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TechZone.</p>
+  </footer>
+</body>
+</html>
